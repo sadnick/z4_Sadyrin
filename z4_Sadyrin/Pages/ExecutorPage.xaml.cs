@@ -72,5 +72,15 @@ namespace z4_Sadyrin.Pages
         {
 
         }
+
+        private void BtnDelete_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BtnEdit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

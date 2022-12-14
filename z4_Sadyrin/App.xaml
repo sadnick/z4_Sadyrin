@@ -4,7 +4,6 @@
              xmlns:local="clr-namespace:z4_Sadyrin"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-
         <!--Style for Txtb TextBlock-->
         <Style TargetType="TextBox" x:Key="Txtb">
             <Setter Property="Background" Value="White"/>
@@ -53,7 +52,7 @@
             <Setter Property="FontFamily" Value=" Calibr"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
-            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="Foreground" Value="White"/>
             <Setter Property="Background" Value="#00d9bb"/>
         </Style>
         <!--Style for title TextBlok-->
@@ -106,6 +105,8 @@
             <Setter Property="Height" Value="35"/>
             <Setter Property="Margin" Value="350 0 0 -40"/>
         </Style>
+
+
         <!--Style for firsNTxtb TextBlok-->
         <Style TargetType="TextBlock" x:Key="firsMTxtb">
             <Setter Property="Width" Value="250"/>

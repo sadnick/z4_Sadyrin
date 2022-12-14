@@ -54,6 +54,11 @@
                         <TextBlock Text="{Binding Executor.User.LastName}"
                                    Style="{StaticResource lastMTxtb}"></TextBlock>
 
+                        <Button Content="Редактировать" Name="BtnEdit" Click="BtnEdit_Click"
+                                  Style="{StaticResource redactBtn}"></Button>
+                        <Button Content="Удалить" Name="BtnDelete" Click="BtnDelete_Click"
+                                  Style="{StaticResource DeleteBtn}"></Button>
+
                     </Grid>                    
                 </DataTemplate>
             </ListView.ItemTemplate>
