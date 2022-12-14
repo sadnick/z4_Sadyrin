@@ -45,5 +45,25 @@ namespace z4_Sadyrin
                 btnBack.Visibility = Visibility.Hidden;
             }
         }
+
+        private void TboxSearch_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void ComboType_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void CheckActual_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CheckActual_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

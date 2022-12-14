@@ -13,6 +13,18 @@
             <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
 
+        <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Введите название для поиска:" Width="175" TextAlignment="Right"></TextBlock>
+                <TextBox Width="225" Name="TboxSearch" TextChanged="TboxSearch_TextChanged"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Выберит тип:" Width="175" TextAlignment="Right"></TextBlock>
+                <ComboBox Width="225" Name="ComboType" SelectionChanged="ComboType_SelectionChanged" DisplayMemberPath="Name"></ComboBox>
+            </StackPanel>
+            <CheckBox x:Name="CheckActual" Checked="CheckActual_Checked" Unchecked="CheckActual_Unchecked" Content="Показывать только акьуальнеы туры" HorizontalAlignment="Center"></CheckBox>
+        </WrapPanel>
+
         <Grid Background="#FFD2D2D2"></Grid>
 
         <TextBlock Text="Esoft" FontFamily="Calibri" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>

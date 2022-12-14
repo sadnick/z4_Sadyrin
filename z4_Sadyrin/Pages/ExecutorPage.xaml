@@ -13,6 +13,18 @@
             <RowDefinition Height="auto"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
+
+        <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Введите название для поиска:" Width="175" TextAlignment="Right"></TextBlock>
+                <TextBox Width="225" Name="TboxSearch" TextChanged="TboxSearch_TextChanged"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Выберит тип:" Width="175" TextAlignment="Right"></TextBlock>
+                <ComboBox Width="225" Name="ComboType" SelectionChanged="ComboType_SelectionChanged" DisplayMemberPath="Status"></ComboBox>
+            </StackPanel>            
+        </WrapPanel>
+
         <ListView Grid.Row="1" Name="LVExecutor">
             <ListView.ItemTemplate>
                 <DataTemplate>
