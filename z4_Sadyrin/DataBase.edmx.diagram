@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="af41d8a56fe14256b4917ed432ea1999" Name="Diagram1">
+        <EntityTypeShape EntityType="z4_train_SadyrinModel.Executor" Width="1.5" PointX="5.25" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="z4_train_SadyrinModel.Manager" Width="1.5" PointX="3" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="z4_train_SadyrinModel.StatusTask" Width="1.5" PointX="5.25" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="z4_train_SadyrinModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="z4_train_SadyrinModel.Task" Width="1.5" PointX="7.5" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="z4_train_SadyrinModel.User" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="z4_train_SadyrinModel.WorkTypeTask" Width="1.5" PointX="5.25" PointY="9.625" IsExpanded="true" />
+        <AssociationConnector Association="z4_train_SadyrinModel.executors_fk0" ManuallyRouted="false" />
+        <AssociationConnector Association="z4_train_SadyrinModel.FK_Executor_User" ManuallyRouted="false" />
+        <AssociationConnector Association="z4_train_SadyrinModel.tasks_fk0" ManuallyRouted="false" />
+        <AssociationConnector Association="z4_train_SadyrinModel.FK_Manager_User" ManuallyRouted="false" />
+        <AssociationConnector Association="z4_train_SadyrinModel.FK_Task_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="z4_train_SadyrinModel.FK_Task_WorkType" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
