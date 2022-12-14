@@ -24,7 +24,7 @@ namespace z4_Sadyrin
         public MainWindow()
         {
             InitializeComponent();
-            MainFrame.Navigate(new TaskPage());
+            MainFrame.Navigate(new ExecutorPage());
             Manager1.MainFrame = MainFrame;
         }
 
