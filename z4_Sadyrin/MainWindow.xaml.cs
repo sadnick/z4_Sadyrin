@@ -24,13 +24,13 @@ namespace z4_Sadyrin
         public MainWindow()
         {
             InitializeComponent();
-            MainFrame.Navigate(new ExecutorPage());
+            MainFrame.Navigate(new Authorization());
             Manager1.MainFrame = MainFrame;
         }
 
         private void btnBack_Click(object sender, RoutedEventArgs e)
         {
-            //Manager.MainFrame.GoBack;
+            Manager1.MainFrame.GoBack();
         }
 
         private void MainFrame_ContentRendered(object sender, EventArgs e)

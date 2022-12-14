@@ -15,9 +15,18 @@ namespace z4_Sadyrin
     
     public partial class z4_train_SadyrinEntities1 : DbContext
     {
+        private static z4_train_SadyrinEntities1 _context;
+
         public z4_train_SadyrinEntities1()
             : base("name=z4_train_SadyrinEntities1")
         {
+        }
+
+        public static z4_train_SadyrinEntities1 GetContext()
+        {
+            if (_context == null)
+                _context = new z4_train_SadyrinEntities1();
+            return _context;
         }
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

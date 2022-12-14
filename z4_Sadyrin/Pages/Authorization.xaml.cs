@@ -16,13 +16,23 @@ using System.Windows.Shapes;
 namespace z4_Sadyrin.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для TaskPage.xaml
+    /// Логика взаимодействия для Authorization.xaml
     /// </summary>
-    public partial class TaskPage : Page
+    public partial class Authorization : Page
     {
-        public TaskPage()
+        public Authorization()
         {
             InitializeComponent();
+        }
+
+        private void btnSubmit_Click(object sender, RoutedEventArgs e)
+        {
+            Manager1.MainFrame.Navigate(new ExecutorPage());
+        }
+
+        private void btnManager_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }

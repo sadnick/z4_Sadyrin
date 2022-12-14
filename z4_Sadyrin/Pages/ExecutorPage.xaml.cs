@@ -23,6 +23,8 @@ namespace z4_Sadyrin.Pages
         public ExecutorPage()
         {
             InitializeComponent();
+            var currentTask = z4_train_SadyrinEntities1.GetContext().Task.ToList();
+            LVExecutor.ItemsSource = currentTask;
         }
     }
 }

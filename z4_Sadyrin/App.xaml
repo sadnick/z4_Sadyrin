@@ -4,6 +4,162 @@
              xmlns:local="clr-namespace:z4_Sadyrin"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+
+        <!--Style for Txtb TextBlock-->
+        <Style TargetType="TextBox" x:Key="Txtb">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="FontSize" Value="17"/>
+            <Setter Property="FontFamily" Value=" Calibr"/>
+            <Setter Property="Margin" Value="25,0,25,0"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+        <!--Style for Txtb TextBlock-->
+        <Style TargetType="PasswordBox" x:Key="psbTxtb">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="FontSize" Value="17"/>
+            <Setter Property="FontFamily" Value=" Calibr"/>
+            <Setter Property="Margin" Value="25,0,25,0"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+        <!--Style for avroriz TextBlock-->
+        <Style TargetType="TextBlock" x:Key="avroriz">
+            <Setter Property="Height" Value="20"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontFamily" Value=" Calibr"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Margin" Value="0,5,0,0"/>
+        </Style>
+        <!--Style for textAvt TextBlock-->
+        <Style TargetType="TextBlock" x:Key="textAvt">
+            <Setter Property="Height" Value="17"/>
+            <Setter Property="FontSize" Value="17"/>
+            <Setter Property="FontFamily" Value=" Calibr"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="Margin" Value="25,10,0,0"/>
+        </Style>
+        <!--Style for textAvt TextBlock-->
+        <Style TargetType="Button" x:Key="BtnAutho">
+            <Setter Property="Height" Value="60"/>
+            <Setter Property="Width" Value="315"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontFamily" Value=" Calibr"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="Background" Value="#00d9bb"/>
+        </Style>
+        <!--Style for title TextBlok-->
+        <Style TargetType="TextBlock" x:Key="titleTxtb">
+            <Setter Property="Width" Value="800"/>
+            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="FontSize" Value="25"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Margin" Value="0 0 0 150"/>
+        </Style>
+        <!--Style for nodefault TextBlok-->
+        <Style TargetType="TextBlock" x:Key="stateTxtb">
+            <Setter Property="Width" Value="300"/>
+            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="FontSize" Value="17"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Margin" Value="0 0 0 30"/>
+        </Style>
+        <!--Style for firsNTxtb TextBlok-->
+        <Style TargetType="TextBlock" x:Key="firsETxtb">
+            <Setter Property="Width" Value="250"/>
+            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="FontSize" Value="17"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Margin" Value="0 0 0 -40"/>
+        </Style>
+        <!--Style for midleNTxtb TextBlok-->
+        <Style TargetType="TextBlock" x:Key="midleETxtb">
+            <Setter Property="Width" Value="250"/>
+            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="FontSize" Value="17"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Margin" Value="250 0 0 -40"/>
+        </Style>
+        <!--Style for lastNTxtb TextBlok-->
+        <Style TargetType="TextBlock" x:Key="lastETxtb">
+            <Setter Property="Width" Value="250"/>
+            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="FontSize" Value="17"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Margin" Value="350 0 0 -40"/>
+        </Style>
+        <!--Style for firsNTxtb TextBlok-->
+        <Style TargetType="TextBlock" x:Key="firsMTxtb">
+            <Setter Property="Width" Value="250"/>
+            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="FontSize" Value="17"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Margin" Value="0 0 0 -90"/>
+        </Style>
+        <!--Style for midleNTxtb TextBlok-->
+        <Style TargetType="TextBlock" x:Key="midleMTxtb">
+            <Setter Property="Width" Value="250"/>
+            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="FontSize" Value="17"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Margin" Value="250 0 0 -90"/>
+        </Style>
+        <!--Style for lastNTxtb TextBlok-->
+        <Style TargetType="TextBlock" x:Key="lastMTxtb">
+            <Setter Property="Width" Value="250"/>
+            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="FontSize" Value="17"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Margin" Value="350 0 0 -90"/>
+        </Style>
+
+
+        <!--Style for nodefault redactBtn-->
+        <Style TargetType="Button" x:Key="redactBtn">
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Background" Value="#00d9bb"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Margin" Value="0 0 0 -170"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+        </Style>
+        <!--Style for default Button-->
+        <Style TargetType="Button" x:Key="DeleteBtn">
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Background" Value="#00d9bb"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Margin" Value="250 0 0 -170"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+
+        </Style>
     </Application.Resources>
 </Application>
