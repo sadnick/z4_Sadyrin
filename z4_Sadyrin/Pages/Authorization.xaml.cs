@@ -32,7 +32,7 @@ namespace z4_Sadyrin.Pages
 
         private void btnManager_Click(object sender, RoutedEventArgs e)
         {
-            
+           
         }
     }
 }
