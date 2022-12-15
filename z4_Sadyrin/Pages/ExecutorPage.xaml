@@ -39,10 +39,11 @@
                                    Style="{StaticResource titleTxtb}"></TextBlock>
                         <TextBlock Text="{Binding StatusTask.Status, StringFormat= {} Статус задачи: {0}}"
                                    Style="{StaticResource stateTxtb}"></TextBlock>
-                        
+
                         <TextBlock Text="{Binding Executor.FirstName, StringFormat= {} ФИО исполнителя: {0}}"
                                    Style="{StaticResource firsETxtb}"></TextBlock>
-                        <TextBlock Text="{Binding Executor.MiddleName}"
+                        <TextBlock Text="{Binding Executor.Patronymic}"
+                                   
                                    Style="{StaticResource midleETxtb}"></TextBlock>
                         <TextBlock Text="{Binding Executor.LastName}"
                                    Style="{StaticResource lastETxtb}"></TextBlock>

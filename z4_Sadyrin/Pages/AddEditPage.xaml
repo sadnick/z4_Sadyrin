@@ -32,7 +32,7 @@
         <TextBox Text="{Binding Title}" Grid.Row="1" Grid.Column="1" Width="500" MaxLength="100"></TextBox>
         <ComboBox Text="{Binding StatusTask.Status}" x:Name="ComboStatus" DisplayMemberPath="Status" Grid.Row="2" Grid.Column="1" Width="500" ></ComboBox>
         <TextBox Text="{Binding Executor.FirstName}" Grid.Row="3" Grid.Column="1" Width="500" MaxLength="100"></TextBox>
-        <TextBox Text="{Binding Executor.MiddleName}" Grid.Row="4" Grid.Column="1" Width="500" MaxLength="100"></TextBox>
+        <TextBox Text="{Binding Executor.Patronymic}" Grid.Row="4" Grid.Column="1" Width="500" MaxLength="100"></TextBox>
         <TextBox Text="{Binding Executor.LastName}" Grid.Row="5" Grid.Column="1" Width="500" MaxLength="100"></TextBox>
 
 
