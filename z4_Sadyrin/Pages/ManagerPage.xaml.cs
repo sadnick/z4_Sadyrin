@@ -16,23 +16,22 @@ using System.Windows.Shapes;
 namespace z4_Sadyrin.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для Authorization.xaml
+    /// Логика взаимодействия для ManagerPage.xaml
     /// </summary>
-    public partial class Authorization : Page
+    public partial class ManagerPage : Page
     {
-        public Authorization()
+        public ManagerPage()
         {
             InitializeComponent();
+            var allTypes = z4_train_SadyrinEntities1.GetContext().StatusTask.ToList();
+
+            var currentTask = z4_train_SadyrinEntities1.GetContext().Task.ToList();
+            LViewExecutor.ItemsSource = currentTask;
         }
 
-        private void btnSubmit_Click(object sender, RoutedEventArgs e)
+        private void ButtonBack_Click(object sender, RoutedEventArgs e)
         {
-            Manager1.MainFrame.Navigate(new ManagerPage());
-        }
-
-        private void btnManager_Click(object sender, RoutedEventArgs e)
-        {
-            Manager1.MainFrame.Navigate(new ExecutorPage());
+            Manager1.MainFrame.GoBack();
         }
     }
 }
